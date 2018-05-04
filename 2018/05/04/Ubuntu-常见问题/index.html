@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Ubuntu 常见问题 | 程小鹏</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="天高地阔，欲往观之。">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ubuntu 常见问题 | 程小鹏">
+    <meta name="twitter:description" content="天高地阔，欲往观之。">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ubuntu 常见问题 | 程小鹏">
+    <meta property="og:description" content="天高地阔，欲往观之。">
+
+    
+    <meta name="author" content="CXP">
+    
+    <link rel="stylesheet" href="/css/vno.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    
+    <link rel="icon" href="/images/avatar.png">
+    
+
+    <meta name="generator" content="hexo"/>
+    
+
+    <link rel="canonical" href="https://cxpblog.com/2018/05/04/Ubuntu-常见问题/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 程小鹏 的主页"><img src="/images/avatar.png" width="80" alt="程小鹏 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for 程小鹏">程小鹏</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">个人博客</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">天高地阔，欲往观之。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="访问博客" class="blog-button">文字阁</a></li>
+            
+              <li class="navigation__item"><a href="/favourite">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/time.html">时光机</a></li>
+            
+              <li class="navigation__item"><a href="/favourite/image.html">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="/about">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+  <li class="navigation__item">
+    <a href="http://weibo.com/311512337" title="我的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li> 
+
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/cheng-peng" title="查看我的GitHub主页" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2018-05-04T10:11:54.000Z" class="post-list__meta--date date">2018-05-04</time> &#8226; <span class="post-meta__tags tags">于 
+  <a class="tag-link" href="/tags/Ubuntu/">Ubuntu</a>
+ </span>
+      <span class="page-pv">
+       阅读 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title">Ubuntu 常见问题</h1>
+  </header>
+
+  <section class="post">
+    <h3 id="ubuntu-关机时喇叭“破音"><a href="#ubuntu-关机时喇叭“破音" class="headerlink" title="ubuntu 关机时喇叭“破音"></a>ubuntu 关机时喇叭“破音</h3><ul>
+<li>sudo gedit /usr/lib/pm-utils/power.d/intel-audio-powersave</li>
+<li>注释这一行：INTEL_AUDIO_POWERSAVE=${INTEL_AUDIO_POWERSAVE:-true}</li>
+<li>加入这句话：INTEL_AUDIO_POWERSAVE=true</li>
+</ul>
+<h3 id="无法获得锁-var-lib-dpkg-lock-open-（11：资源暂时不可用）"><a href="#无法获得锁-var-lib-dpkg-lock-open-（11：资源暂时不可用）" class="headerlink" title="无法获得锁 /var/lib/dpkg/lock -open （11：资源暂时不可用）"></a>无法获得锁 /var/lib/dpkg/lock -open （11：资源暂时不可用）</h3><ul>
+<li>解决方法，强制解除：</li>
+<li>sudo rm /var/cache/apt/archives/lock</li>
+<li>sudo rm /var/lib/dpkg/lock</li>
+</ul>
+<h3 id="解决apt-get-下载速度慢"><a href="#解决apt-get-下载速度慢" class="headerlink" title="解决apt-get 下载速度慢"></a>解决apt-get 下载速度慢</h3><ul>
+<li>sudo add-apt-repository ppa:saiarcot895/myppa</li>
+<li>sudo apt-get update</li>
+<li>sudo apt-get -y install apt-fast</li>
+<li>使用：sudo apt-fast install python3.5    （使用方法就是把apt-get 换成apt-fast）</li>
+</ul>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/05/04/Ubuntu-常用命令/" title="Ubuntu 常用命令">Ubuntu 常用命令</a></h2>
+                <p class="excerpt">
+                
+                系统命令
+查看系统位数：getconf  LONG_BIT
+查看磁盘占用：df -h
+查看当前系统版本：cat /etc/issue
+安装所有依赖：sudo apt-get install -f
+查看软件安装目录：whereis java
+查询文件运行文件：which java
+查询软件进程：ps 
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-05-04T10:12:08.000Z" class="post-list__meta--date date">2018-05-04</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/ubuntu/">ubuntu</a>
+</span><a class="btn-border-small" href="/2018/05/04/Ubuntu-常用命令/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">更早的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2018/05/04/Ubuntu16.04下SVN-服务器-客户端安装使用/" title="Ubuntu16.04下SVN 服务器+客户端安装使用">Ubuntu16.04下SVN 服务器+客户端安装使用</a></h2>
+                <p class="excerpt">
+                
+                SVN 服务器搭建12345678910111213141516171819202122232425262728293031323334353637383940411.sudo apt-get install subversion  下载svn2.mkdir -p svn/repos/cxp  创建
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2018-05-04T10:07:11.000Z" class="post-list__meta--date date">2018-05-04</time> &#8226; <span class="post-list__meta--tags tags">于 
+  <a class="tag-link" href="/tags/ubuntu/">ubuntu</a>
+</span><a class="btn-border-small" href="/2018/05/04/Ubuntu16.04下SVN-服务器-客户端安装使用/">继续阅读</a></div>
+                       
+            </div>
+        
+     
+   
+   
+  
+</section>
+
+  
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'CXP'; 
+      
+  var disqus_identifier = '/2018/05/04/Ubuntu-常见问题/';
+  var disqus_title = 'Ubuntu 常见问题';
+  var disqus_url = 'https://cxpblog.com/2018/05/04/Ubuntu-常见问题/';
+  
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          //dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          dsq.src = 'https://a.disquscdn.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2018 CXP - 本站仅用来交流学习。
+       
+    </span>
+    <span class="footer__copyright">
+             - <a href="http://hexo.io">程小鹏-个人博客</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
